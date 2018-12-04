@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button1"
+            android:background="@drawable/circular_background"
+            android:layout_width="50dp"
+            android:text="1"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:background="@drawable/circular_background"
+            android:layout_width="50dp"
+            android:text="2"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:background="@drawable/circular_background"
+            android:layout_width="50dp"
+            android:text="3"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fab"
+        android:background="@drawable/circular_background"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin" />
+</RelativeLayout>
